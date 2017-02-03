@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2016-08-10T13:27:45 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DashboardReportTemplate" pageWidth="1190" pageHeight="842" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="1150" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="66519d71-4f27-4833-9a1d-c9b72e811f0c">
+	<property name="template.engine" value="tabular_template"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataBeanList" uuid="26ababf1-69c3-4af7-8d4f-80e72bb478b0">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="serialNo" class="java.lang.String">
+			<fieldDescription><![CDATA[serialNo]]></fieldDescription>
+		</field>
+		<field name="fileName" class="java.lang.String">
+			<fieldDescription><![CDATA[fileName]]></fieldDescription>
+		</field>
+		<field name="customerRefNo" class="java.lang.String">
+			<fieldDescription><![CDATA[customerRefNo]]></fieldDescription>
+		</field>
+		<field name="uploadTime" class="java.lang.String">
+			<fieldDescription><![CDATA[uploadTime]]></fieldDescription>
+		</field>
+		<field name="summaryCount" class="java.lang.String">
+			<fieldDescription><![CDATA[summaryCount]]></fieldDescription>
+		</field>
+		<field name="summaryAmount" class="java.lang.String">
+			<fieldDescription><![CDATA[summaryAmount]]></fieldDescription>
+		</field>
+		<field name="authSummaryCount" class="java.lang.String">
+			<fieldDescription><![CDATA[authSummaryCount]]></fieldDescription>
+		</field>
+		<field name="authSummaryAmount" class="java.lang.String">
+			<fieldDescription><![CDATA[authSummaryAmount]]></fieldDescription>
+		</field>
+		<field name="authHoldCount" class="java.lang.String">
+			<fieldDescription><![CDATA[authHoldCount]]></fieldDescription>
+		</field>
+		<field name="authHoldAmount" class="java.lang.String">
+			<fieldDescription><![CDATA[authHoldAmount]]></fieldDescription>
+		</field>
+		<field name="confCount" class="java.lang.String">
+			<fieldDescription><![CDATA[confCount]]></fieldDescription>
+		</field>
+		<field name="confAmount" class="java.lang.String">
+			<fieldDescription><![CDATA[confAmount]]></fieldDescription>
+		</field>
+		<field name="confParkCount" class="java.lang.String">
+			<fieldDescription><![CDATA[confParkCount]]></fieldDescription>
+		</field>
+		<field name="confParkAmount" class="java.lang.String">
+			<fieldDescription><![CDATA[confParkAmount]]></fieldDescription>
+		</field>
+		<field name="expCount" class="java.lang.String">
+			<fieldDescription><![CDATA[expCount]]></fieldDescription>
+		</field>
+		<field name="expAmount" class="java.lang.String">
+			<fieldDescription><![CDATA[expAmount]]></fieldDescription>
+		</field>
+		<field name="errorCount" class="java.lang.String">
+			<fieldDescription><![CDATA[errorCount]]></fieldDescription>
+		</field>
+		<field name="fileStatus" class="java.lang.String">
+			<fieldDescription><![CDATA[fileStatus]]></fieldDescription>
+		</field>
+		<field name="uploadedBy" class="java.lang.String">
+			<fieldDescription><![CDATA[uploadedBy]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="fromDate" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="toDate" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="userName" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="imageUrl" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="custCode" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<field name="dataBeanList" class="net.sf.jasperreports.engine.data.JRBeanArrayDataSource"/>
+	<pageHeader>
+		<band height="179">
+			<staticText>
+				<reportElement mode="Opaque" x="5" y="132" width="40" height="47" backcolor="#B8DCFF" uuid="0adab623-bf64-456c-9d2a-03f2eb52e6fd">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Serial No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="45" y="132" width="90" height="47" backcolor="#B8DCFF" uuid="b24a4f9e-0529-4742-ad40-29192cb5128a">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[File Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="135" y="132" width="70" height="47" backcolor="#B8DCFF" uuid="1573329c-ae9c-4723-8de7-b2394b78f9d3">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Ref. No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="205" y="132" width="70" height="47" backcolor="#B8DCFF" uuid="9528eb23-32fd-4f5c-8607-cd07c0d9d9a7"/>
+				<box leftPadding="2" rightPadding="2">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Upload Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="275" y="132" width="120" height="47" backcolor="#B8DCFF" uuid="c75dae0f-b713-49d8-bcf0-47f68fd6105a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Batch/File Summary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="395" y="132" width="240" height="47" backcolor="#B8DCFF" uuid="3f44dc2c-a90d-4956-a875-d58205e89041">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Authorization Pending Summary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="635" y="132" width="230" height="47" backcolor="#B8DCFF" uuid="b831e377-c8bc-4ac9-80ff-a9be1a61753a"/>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Confirmation Pending Summary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="865" y="132" width="120" height="47" backcolor="#B8DCFF" uuid="9726e6c8-7225-4c61-9ef5-a9c5ea1939fe"/>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Expired/Rejected Transactions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="985" y="132" width="40" height="47" backcolor="#B8DCFF" uuid="6e3a813b-1a72-4237-aad8-deb82db9f30c"/>
+				<box leftPadding="3" rightPadding="0">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Upload Error Count]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1025" y="132" width="60" height="47" backcolor="#B8DCFF" uuid="3cf756e7-92cc-4927-9267-45ecc8cb1035"/>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[File Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1085" y="132" width="55" height="47" backcolor="#B8DCFF" uuid="0c46f08f-682e-48a1-9f5b-5783bee778e8"/>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Uploaded By]]></text>
+			</staticText>
+			<image>
+				<reportElement isPrintRepeatedValues="false" x="0" y="4" width="164" height="50" isPrintInFirstWholeBand="true" uuid="cac59800-27c0-48f5-b967-babe19ca8dbe"/>
+				<imageExpression><![CDATA[$P{imageUrl}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="340" y="38" width="570" height="30" uuid="03abaed0-789b-4a73-bcfb-a015ecae4aec"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Bright" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRANSACTION DASHBOARD REPORT ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="70" width="44" height="13" uuid="9e5f8598-5097-4a5d-99bf-0ceb5f69dbfe"/>
+				<textElement>
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[From ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="517" y="70" width="62" height="13" uuid="a8ebdd16-032f-4f3a-9c48-eb20bceafb6e"/>
+				<textElement textAlignment="Left">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fromDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="583" y="70" width="21" height="13" uuid="028f670f-d2e9-420d-884e-19a8ca3279ee"/>
+				<textElement>
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[To]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="604" y="70" width="66" height="13" uuid="96303962-1ad6-45e9-886d-f99b390367b6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{toDate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" evaluationTime="Page">
+				<reportElement stretchType="RelativeToTallestObject" x="336" y="88" width="484" height="17" uuid="0e40a9aa-13dc-45a8-89cb-c675d0dae1c8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{custCode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="980" y="77" width="71" height="16" uuid="5ac5d827-4ec8-478c-b05c-c586613617e5">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bus Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="980" y="97" width="76" height="16" uuid="6f0e246a-03f2-41cc-a961-351610ebdaf0">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="980" y="113" width="71" height="17" uuid="106d1c93-fc8a-47de-a9eb-19af4d553d28">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Page No:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1053" y="114" width="20" height="17" uuid="30317194-6d22-4753-98d2-b4819530d836">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="1073" y="114" width="37" height="17" uuid="1d788827-1f83-41d8-ab24-0ce0ebab4e21"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["/"+$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement x="1056" y="92" width="64" height="22" uuid="a08a5f47-c9d1-461b-8137-4a08a95e6866"/>
+				<box topPadding="6" leftPadding="5" bottomPadding="3" rightPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Lucida Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{userName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1058" y="77" width="77" height="15" uuid="97be1719-a22c-427c-b93e-953dbd0af072">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Lucida Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd.MM.yyyy").format(new Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="80" splitType="Immediate">
+			<componentElement>
+				<reportElement stretchType="RelativeToBandHeight" x="5" y="0" width="1135" height="80" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="f7b0627f-5915-4593-a799-23953d92bae3">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="dataBeanList" uuid="3c2a874d-db7b-4393-91cf-a1f1c4f653d2">
+						<dataSourceExpression><![CDATA[$F{dataBeanList}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="40" uuid="1d6797b9-447f-4610-934d-6c2229d1daa6">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="50" uuid="2c895adf-b5f2-4851-aeec-ade3138ad91e"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="30" isPrintWhenDetailOverflows="true" uuid="b3e0cee5-ce7a-43fb-a0fb-e089b2fb3a7a"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{serialNo}==null?"":$F{serialNo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="df459451-5e21-45b1-9511-cd39e8dc51b2">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="50" uuid="c2be45b1-97ba-4b7c-b798-b66780f8187a"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="90" height="30" isPrintWhenDetailOverflows="true" uuid="dfd83d34-2dbb-4f31-a9a8-dd2530fd15fa"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{fileName}==null?"":$F{fileName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="a47b6973-82b3-4608-94c9-f5d36a73450a">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="50" uuid="a013e614-8909-413e-9147-628c7062157d"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="70" height="30" isPrintWhenDetailOverflows="true" uuid="d1411322-7f7a-4a28-968a-c3d5c3a3d3f4"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{customerRefNo}==null?"":$F{customerRefNo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="5f9665d7-6958-40dc-b9cf-5abf45a08434">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="50" uuid="095b863e-cb30-47ff-b995-9574fc1a7d48"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="70" height="30" isPrintWhenDetailOverflows="true" uuid="7afc7fa5-d21d-45bd-b166-48cc49d3938f"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{uploadTime}==null?"":$F{uploadTime}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="bfcf08a0-7f27-4147-aa50-4bc257a6a911">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="50" uuid="5f50f117-f111-4b99-b83a-8d9b49b30d05"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Count]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="30" isPrintWhenDetailOverflows="true" uuid="933469b3-f747-4594-8119-210bea437b6c"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{summaryCount}==null?"":$F{summaryCount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="37eced63-75d0-4aab-8604-329359db52b9">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="50" uuid="95bd8cba-137b-4386-b168-f6ec3ef0224a">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Amount]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="80" height="30" isPrintWhenDetailOverflows="true" uuid="06099081-ae42-47a8-8942-9a608912947a"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{summaryAmount}==null?"":$F{summaryAmount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="c9768036-a227-4c2b-a1a8-a03acd63ced5">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="50" uuid="1c76e230-0326-46e3-801d-a138582b00ab"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Count]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="30" isPrintWhenDetailOverflows="true" uuid="82423444-748a-43d3-98a6-9d5e42a04e21"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{authSummaryCount}==null?"":$F{authSummaryCount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="3107792f-2f97-40e2-a58c-567db2b4a78e">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="50" uuid="7b8827c4-ac0c-4893-8816-2e5f99ed51e3"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Amount]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="80" height="30" isPrintWhenDetailOverflows="true" uuid="da026ee3-c3b2-4774-8d1b-37d5c744cfbd"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{authSummaryAmount}==null?"":$F{authSummaryAmount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="01f4e4af-cfb4-47d8-82cd-3ee8150f7dd6">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="50" uuid="63e7b55f-9b04-4b20-bcb6-1c118382b3e2"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Hold Count]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="30" isPrintWhenDetailOverflows="true" uuid="30bbb4de-dbce-4232-9086-b000793a3cfd"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{authHoldCount}==null?"":$F{authHoldCount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="e203ff5c-7fef-48ec-a262-7bd2afe946c7">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="50" uuid="2e2b4ea1-8a1c-4561-92e7-4ca87e17d138"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Hold Amount]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="80" height="30" isPrintWhenDetailOverflows="true" uuid="cdd38f45-4e69-4d20-a195-37aa97ec1a86"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{authHoldAmount}==null?"":$F{authHoldAmount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="3e28c39e-9a21-4a93-81b2-b04eb005e142">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="50" uuid="7aec7d54-d086-431b-8836-f0e61e37c53a"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Count]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="30" isPrintWhenDetailOverflows="true" uuid="e61006e9-fa90-4931-b366-cdee45522f29"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{confCount}==null?"":$F{confCount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="203395ba-e7c2-4441-9fc0-d5a372b2b6d7">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="50" uuid="13152da8-d86d-462e-a4aa-d0ce46219ec3"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Amount]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="80" height="30" isPrintWhenDetailOverflows="true" uuid="1229e813-7779-4f3c-b4be-dead4156feb7"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{confAmount}==null?"":$F{confAmount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="52c50508-7435-4fc1-bc3e-0a0e05417aec">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="50" uuid="9759edc7-0eec-4ab7-9fd5-798f915b8682"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Park Count]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="30" isPrintWhenDetailOverflows="true" uuid="cc2e1370-279b-4dc8-bb1a-ecb42d774e3a"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{confParkCount}==null?"":$F{confParkCount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="6beccd25-1374-4bd1-a9b9-5580da9df323">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="50" uuid="9c3b875a-3cb5-46e3-be98-92ce453e947b"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Park Amount]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="70" height="30" isPrintWhenDetailOverflows="true" uuid="fc58dc1e-ced5-41cd-b9f4-4805d7610bc1"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{confParkAmount}==null?"":$F{confParkAmount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="104bf21f-475a-4814-a4af-a3f7737c78e1">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="50" uuid="89a9a568-4117-4b48-972e-b3ed143cca46"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Count]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="30" isPrintWhenDetailOverflows="true" uuid="2c54f9cf-9dce-4175-962f-f06e833d9ef6"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{expCount}==null?"":$F{expCount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="0933fa4a-4323-4a7f-9132-37f45483aba4">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="50" uuid="8b233538-ab25-48e1-9433-1ab2370c2ccb"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Lucida Sans" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Amount]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="80" height="30" isPrintWhenDetailOverflows="true" uuid="98da1981-5685-40ae-b9aa-3239326980b4"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{expAmount}==null?"":$F{expAmount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="34f91336-5bf8-4501-bed4-4d76c4d92be7">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="50" uuid="62508e36-8a45-4f54-a67e-0dccd5ff6a99"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="30" isPrintWhenDetailOverflows="true" uuid="ba6912f1-8081-4232-bf9c-d68864716be4"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{errorCount}==null?"":$F{errorCount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="0016779b-184e-435c-9bfa-12579807e3f4">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="50" uuid="98a75974-300b-4e95-ad9a-cdc1f49d1a9f"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="60" height="30" isPrintWhenDetailOverflows="true" uuid="2be5b4fe-7ac7-4561-86d5-83624058b0e2"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{fileStatus}==null?"":$F{fileStatus}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="002ffcf1-1c57-4f91-a5a2-356b70fb9b53">
+						<jr:columnHeader style="Table_CH" height="50">
+							<staticText>
+								<reportElement x="0" y="0" width="55" height="50" uuid="4c27a12a-3b7e-4a7f-a14a-7a67ce4b149f"/>
+								<box leftPadding="3" rightPadding="3">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="55" height="30" isPrintWhenDetailOverflows="true" uuid="b098d566-5906-4c8a-8377-74f0f23cdcb9"/>
+								<box padding="2">
+									<topPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.6" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Lucida Sans"/>
+									<paragraph leftIndent="2" rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{uploadedBy}==null?"":$F{uploadedBy}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

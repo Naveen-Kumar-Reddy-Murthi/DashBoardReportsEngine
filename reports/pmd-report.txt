@@ -1,0 +1,330 @@
+src/com/nuccash/payments/jasper/controller/HTML2PDF.java:3:	Avoid unused imports such as 'java.io.FileNotFoundException'
+src/com/nuccash/payments/jasper/controller/HTML2PDF.java:12:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/nuccash/payments/jasper/controller/HTML2PDF.java:12:	headerCommentRequirement Required
+src/com/nuccash/payments/jasper/controller/HTML2PDF.java:19:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/com/nuccash/payments/jasper/controller/HTML2PDF.java:19:	Parameter 'args' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/controller/HTML2PDF.java:31:	System.out.println is used
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:16:	Avoid duplicate imports such as 'com.lowagie.text.PageSize'
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:20:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:20:	headerCommentRequirement Required
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:25:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:25:	Parameter 'args' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:42:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:44:	Avoid printStackTrace(); use a logger call instead.
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:49:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:59:	Avoid appending characters as strings in StringBuffer.append.
+src/com/nuccash/payments/jasper/controller/HTMLtoPDF.java:65:	Avoid printStackTrace(); use a logger call instead.
+src/com/nuccash/payments/jasper/controller/ReportDownload.java:29:	Each class should declare at least one constructor
+src/com/nuccash/payments/jasper/controller/ReportDownload.java:30:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/controller/ReportDownload.java:56:	System.out.println is used
+src/com/nuccash/payments/jasper/controller/ReportDownload.java:61:	System.out.println is used
+src/com/nuccash/payments/jasper/controller/ReportDownload.java:79:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/com/nuccash/payments/jasper/controller/ReportDownload.java:85:	Avoid printStackTrace(); use a logger call instead.
+src/com/nuccash/payments/jasper/controller/ReportDownload.java:88:	Avoid printStackTrace(); use a logger call instead.
+src/com/nuccash/payments/jasper/controller/ReportDownload.java:91:	Avoid printStackTrace(); use a logger call instead.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:12:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:13:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:14:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:15:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:16:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:17:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:18:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:19:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:20:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:21:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:22:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:23:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:24:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:25:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:59:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:63:	Parameter 'serialNo' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:63:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:67:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:71:	Parameter 'fileName' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:71:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:75:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:79:	Parameter 'customerRefNo' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:79:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:83:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:87:	Parameter 'uploadTime' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:87:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:91:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:95:	Parameter 'txnSuccessAmount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:95:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:99:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:103:	Parameter 'txnSuccessCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:103:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:107:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:111:	Parameter 'txnErrorCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:111:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:115:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:119:	Parameter 'txnTotalCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:119:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:123:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:127:	Parameter 'anxSuccessCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:127:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:131:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:135:	Parameter 'anxErrorCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:135:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:139:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:143:	Parameter 'anxTotal' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:143:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:147:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:151:	Parameter 'totalCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:151:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:155:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:159:	Parameter 'fileStatus' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:159:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:163:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:167:	Parameter 'maker' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:167:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:175:	StringBuffer (or StringBuilder).append is called 2 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:175:	StringBuffer constructor is initialized with size 16, but has at least 215 characters appended.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:176:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:177:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:178:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:179:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:180:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:181:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:182:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:183:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:184:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:185:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:186:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:187:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:188:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:189:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:190:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:191:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:192:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:193:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:194:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:195:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:196:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:197:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:198:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:199:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:200:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:201:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:202:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:203:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:204:	An empty statement (semicolon) not part of a loop
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:204:	An empty statement (semicolon) not part of a loop
+src/com/nuccash/payments/jasper/dto/AdviceReportDTO.java:204:	Avoid appending characters as strings in StringBuffer.append.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:12:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:13:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:14:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:15:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:16:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:17:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:18:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:19:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:20:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:49:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:53:	Parameter 'serialNo' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:53:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:57:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:61:	Parameter 'fileName' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:61:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:65:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:69:	Parameter 'successCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:69:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:73:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:77:	Parameter 'errorCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:77:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:81:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:85:	Parameter 'totalCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:85:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:89:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:93:	Parameter 'totalAmount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:93:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:97:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:101:	Parameter 'fileStatus' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:101:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:105:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:109:	Parameter 'uploadTime' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:109:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:113:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:117:	Parameter 'maker' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:117:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:125:	StringBuffer constructor is initialized with size 16, but has at least 134 characters appended.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:126:	StringBuffer (or StringBuilder).append is called 3 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:126:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:127:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:128:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:129:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:130:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:131:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:132:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:133:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:134:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:135:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:136:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:137:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:138:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:139:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:140:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:141:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:142:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:143:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/OtherReportDTO.java:144:	Avoid appending characters as strings in StringBuffer.append.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:12:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:13:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:14:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:15:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:16:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:17:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:18:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:19:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:20:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:21:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:22:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:23:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:24:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:25:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:26:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:27:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:28:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:29:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:30:	fieldCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:71:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:75:	Parameter 'serialNo' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:75:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:79:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:83:	Parameter 'fileName' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:83:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:87:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:91:	Parameter 'customerRefNo' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:91:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:95:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:99:	Parameter 'uploadTime' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:99:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:103:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:107:	Parameter 'summaryCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:107:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:111:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:115:	Parameter 'summaryAmount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:115:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:119:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:123:	Parameter 'authSummaryCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:123:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:127:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:131:	Parameter 'authSummaryAmount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:131:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:135:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:139:	Parameter 'authHoldCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:139:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:143:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:147:	Parameter 'authHoldAmount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:147:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:151:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:155:	Parameter 'confCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:155:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:159:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:163:	Parameter 'confAmount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:163:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:167:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:171:	Parameter 'confParkCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:171:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:175:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:179:	Parameter 'confParkAmount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:179:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:183:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:187:	Parameter 'expCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:187:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:191:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:195:	Parameter 'expAmount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:195:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:199:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:203:	Parameter 'errorCount' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:203:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:207:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:211:	Parameter 'fileStatus' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:211:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:215:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:219:	Parameter 'uploadedBy' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:219:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:227:	StringBuffer (or StringBuilder).append is called 2 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:227:	StringBuffer constructor is initialized with size 16, but has at least 295 characters appended.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:228:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:229:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:230:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:231:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:232:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:233:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:234:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:235:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:236:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:237:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:238:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:239:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:240:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:241:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:242:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:243:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:244:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:245:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:246:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:247:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:248:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:249:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:250:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:251:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:252:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:253:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:254:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:255:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:256:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:257:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:258:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:259:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:260:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:261:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:262:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:263:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:264:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:265:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/dto/TransactionReportDTO.java:266:	Avoid appending characters as strings in StringBuffer.append.
+src/com/nuccash/payments/jasper/helper/JsonGenerator.java:18:	Avoid unnecessary constructors - the compiler will generate these for you
+src/com/nuccash/payments/jasper/helper/JsonGenerator.java:18:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:1:	A high number of imports can indicate a high degree of coupling within an object.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:1:	Too many static imports may lead to messy code
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:29:	Avoid unused imports such as 'net.sf.jasperreports.engine.JRExporter'
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:38:	Avoid unused imports such as 'net.sf.jasperreports.engine.export.JRHtmlExporter'
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:39:	Avoid unused imports such as 'net.sf.jasperreports.engine.export.JRHtmlExporterParameter'
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:56:	Each class should declare at least one constructor
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:78:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:83:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:116:	Comment is too large: Line too long
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:119:	Comment is too large: Line too long
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:145:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:146:	StringBuffer (or StringBuilder).append is called 5 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:146:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:147:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:148:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:149:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:150:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:283:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:284:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:318:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:386:	Avoid excessively long variable names like adviceReportString
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:387:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:448:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/ReportGenerator.java:449:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/com/nuccash/payments/jasper/helper/TestClass.java:3:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/nuccash/payments/jasper/helper/TestClass.java:3:	headerCommentRequirement Required
+src/com/nuccash/payments/jasper/helper/TestClass.java:8:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/com/nuccash/payments/jasper/helper/TestClass.java:8:	Parameter 'args' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/helper/TestClass.java:10:	Avoid unused local variables such as 'gen'.
+src/com/nuccash/payments/jasper/service/ReportService.java:26:	Each class should declare at least one constructor
+src/com/nuccash/payments/jasper/service/ReportService.java:42:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:21:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:21:	headerCommentRequirement Required
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:24:	Parameter 'jsonString' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:24:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:30:	Avoid variables with short names like t
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:32:	Consider simply returning the value vs storing it in local variable 'dataBeanList'
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:35:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:35:	Parameter 'dataBeanList' is not assigned and could be declared final
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:35:	publicMethodCommentRequirement Required
+src/com/nuccash/payments/jasper/service/TransactionReportService.java:38:	Avoid using implementation types like 'ArrayList'; use the interface instead
